@@ -33,14 +33,14 @@ $mail->SMTPOptions = array(
 );
 
 try {
-  $mail->Host = 'smtp.jedis.com.br';
+  $mail->Host = 'smtp.jedisacademy.com.br';
   $mail->Port = 587;
   $mail->SMTPAuth = true;
-  $mail->Username = 'site@jedis.com.br';
+  $mail->Username = 'site@jedisacademy.com.br';
   $mail->Password = '123@Mudar';
 
-  $mail->setFrom('site@jedis.com.br');
-  $mail->addReplyTo('site@jedis.com.br');
+  $mail->setFrom('site@jedisacademy.com.br');
+  $mail->addReplyTo('site@jedisacademy.com.br');
   $mail->Subject = $assunto;
 
   $mail->addAddress('contato@jedis.com.br', $assunto);
