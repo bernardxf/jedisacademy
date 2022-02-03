@@ -26,25 +26,24 @@ $mail->SMTPDebug = SMTP::DEBUG_OFF;
 
 $mail->SMTPOptions = array(
   'ssl' => array(
-      'verify_peer' => false,
-      'verify_peer_name' => false,
-      'allow_self_signed' => true
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true
   )
 );
 
 try {
-  $mail->Host = 'smtp.jedisacademy.com.br';
+  $mail->Host = 'smtp.jedis.com.br';
   $mail->Port = 587;
   $mail->SMTPAuth = true;
-  $mail->Username = 'site@jedisacademy.com.br';
+  $mail->Username = 'site@jedis.com.br';
   $mail->Password = '123@Mudar';
 
-  $mail->setFrom('site@jedisacademy.com.br');
-  $mail->addReplyTo('site@jedisacademy.com.br');
+  $mail->setFrom('site@jedis.com.br');
+  $mail->addReplyTo('site@jedis.com.br');
   $mail->Subject = $assunto;
 
-  $mail->addAddress('contato@jedisacademy.com.br', $assunto);
-  // $mail->addAddress('bernardxf@gmail.com', $assunto);
+  $mail->addAddress('contato@jedis.com.br', $assunto);
 
   $body .= "<h2>Inscrição Jedis Academy</h2>";
   $body .= "<strong>Nome:</strong> $name <br/><br/>";
