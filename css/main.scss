@@ -336,13 +336,6 @@ textarea {
   color: var(--white);
 }
 
-header,
-section,
-footer {
-  display: block;
-  width: 100vw;
-}
-
 section {
   padding: 40px 0;
 }
@@ -593,7 +586,7 @@ header {
 
       @media (max-width: 768px) {
         margin-bottom: 32px;
-        width: 100%; 
+        width: 100%;
       }
     }
 
@@ -771,22 +764,22 @@ header {
   img {
     position: absolute;
   }
-  
+
   .circle-shape-1 {
     left: -246px;
     top: -201px;
   }
-  
+
   .circle-shape-2 {
     left: 301px;
     bottom: -300.5px;
   }
-  
+
   .circle-shape-3 {
     top: -21px;
     right: -295px;
   }
-  
+
   .circle-shape-4 {
     top: -283px;
     right: 206px;
@@ -830,7 +823,7 @@ header {
       margin-bottom: 5px;
       text-align: left;
     }
-  
+
     input {
       background: none;
       border: 1px solid var(--white);
@@ -843,11 +836,11 @@ header {
       transition: all linear 0.25s;
       outline: none;
       width: 100%;
-  
+
       &:focus {
         border-color: var(--black);
       }
-  
+
       &:invalid:focus {
         border-color: var(--red);
       }
@@ -876,7 +869,7 @@ header {
         border-top: 12px solid var(--white);
         z-index: -1;
       }
-      
+
       select {
         appearance: none;
         background-color: transparent;
@@ -888,7 +881,7 @@ header {
         width: 100%;
       }
     }
-  
+
     button {
       background: none;
       border: none;
@@ -901,7 +894,7 @@ header {
       margin: 24px 0;
       outline: none;
       transition: all linear 0.25s;
-  
+
       &:hover {
         color: var(--black);
         border-color: var(--black);
@@ -942,7 +935,7 @@ footer {
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
     }
-    
+
     p {
       margin-bottom: 16px;
     }
